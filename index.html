@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ADA Technical Skills Academy | TVET Untuk Belia</title>
+<meta name="description" content="ADA Technical Skills Academy menawarkan program TVET untuk lepasan SPM dan belia Malaysia. PTPK, elaun sehingga RM800 sebulan, latihan praktikal dan laluan kerjaya.">
+<style>
+:root{--navy:#071d3d;--blue:#0d4fa8;--gold:#f4b51b;--ink:#12213a;--muted:#637086;--light:#f5f8fc;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+.container{width:min(1140px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid #e8edf4}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy);font-weight:800}
+.brand img{height:52px;width:auto;object-fit:contain}
+.navlinks{display:flex;gap:25px;align-items:center}.navlinks a{text-decoration:none;color:var(--ink);font-weight:700;font-size:14px}
+.cta{display:inline-block;background:var(--gold);color:#071d3d;padding:12px 20px;border-radius:9px;text-decoration:none;font-weight:900;box-shadow:0 7px 18px #f4b51b35}
+.hero{background:linear-gradient(135deg,#061a38 0%,#0c3974 62%,#0c4fa8 100%);color:#fff;padding:78px 0 70px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:50px}
+.badge{display:inline-block;background:#f4b51b;color:#071d3d;font-weight:900;padding:7px 13px;border-radius:999px;font-size:13px;margin-bottom:18px}
+h1{font-size:clamp(42px,6vw,70px);line-height:1.03;margin:0 0 20px;letter-spacing:-1.5px}
+.hero p{font-size:19px;color:#dbe7f8;max-width:650px;margin:0 0 28px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.btn-white{display:inline-block;background:#fff;color:var(--navy);padding:13px 20px;border-radius:9px;text-decoration:none;font-weight:900}
+.hero-poster{width:100%;border-radius:18px;box-shadow:0 25px 60px #0008;border:4px solid #fff3}
+section{padding:72px 0}.section-head{text-align:center;margin-bottom:40px}.eyebrow{color:var(--blue);font-weight:900;text-transform:uppercase;letter-spacing:1px;font-size:13px}.section-head h2{font-size:38px;margin:7px 0 10px;color:var(--navy)}.section-head p{color:var(--muted);max-width:720px;margin:auto}
+.benefits{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.benefit{background:#fff;border:1px solid #e5ebf3;border-radius:14px;padding:22px 16px;text-align:center;box-shadow:0 8px 25px #102a4d0a}
+.icon{font-size:30px;margin-bottom:9px}.benefit h3{font-size:16px;margin:0 0 6px}.benefit p{font-size:13px;color:var(--muted);margin:0}
+.programs{background:var(--light)}.program-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.program{background:#fff;border-radius:14px;padding:22px;border:1px solid #e3eaf3;min-height:150px;transition:.2s}.program:hover{transform:translateY(-3px);box-shadow:0 14px 35px #0a2c5614}
+.program .emoji{font-size:30px}.program h3{margin:8px 0 4px;font-size:18px}.program p{margin:0;color:var(--muted);font-size:14px}
+.audience{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:stretch}
+.panel{background:var(--navy);color:#fff;border-radius:18px;padding:34px}.panel h2{font-size:32px;margin-top:0}.panel li{margin:12px 0;color:#dce7f6}.panel.gold{background:#fff8df;color:var(--ink);border:1px solid #f6d778}.panel.gold li{color:#39445a}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.gallery img{width:100%;height:340px;object-fit:cover;border-radius:14px;box-shadow:0 10px 25px #0c254012}
+.contact{background:linear-gradient(135deg,#071d3d,#0d4fa8);color:#fff;text-align:center}.contact h2{font-size:42px;margin:0 0 10px}.contact p{color:#dce7f6;margin-bottom:25px}.contact-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+footer{background:#06152d;color:#b9c7db;padding:25px 0;text-align:center;font-size:13px}
+.float-wa{position:fixed;right:18px;bottom:18px;background:#20c763;color:#fff;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;text-decoration:none;font-size:28px;box-shadow:0 10px 25px #0004;z-index:30}
+@media(max-width:900px){.hero-grid,.audience{grid-template-columns:1fr}.benefits{grid-template-columns:repeat(2,1fr)}.program-grid{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}}
+@media(max-width:560px){.nav{height:68px}.brand img{height:44px}.hero{padding:55px 0}.benefits,.program-grid,.gallery{grid-template-columns:1fr}.gallery img{height:auto}.panel{padding:25px}section{padding:55px 0}h1{font-size:43px}}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="#"><img src="assets/logo.jpg" alt="ADA Technical Skills Academy logo"></a>
+<nav class="navlinks">
+<a href="#why">Kenapa TVET</a><a href="#program">Program</a><a href="#about">Untuk Siapa</a><a href="#galeri">Galeri</a><a class="cta nav-whatsapp" href="https://wa.me/60173014016?text=Assalamualaikum%2C%20saya%20berminat%20dengan%20program%20TVET%20ADA%20Technical%20Skills%20Academy." target="_blank">💬 WhatsApp</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<span class="badge">TVET UNTUK BELIA • 2026</span>
+<h1>Bina Kemahiran.<br><span style="color:#f4b51b">Bina Masa Depan.</span></h1>
+<p>ADA Technical Skills Academy menyediakan laluan TVET yang praktikal untuk lepasan SPM dan belia Malaysia — dengan latihan hands-on, pensijilan dan peluang kerjaya.</p>
+<div class="hero-actions">
+<a class="cta" href="https://wa.me/60173014016?text=Assalamualaikum%2C%20saya%20berminat%20dengan%20program%20TVET%20ADA%20Technical%20Skills%20Academy." target="_blank">WhatsApp Kami</a>
+<a class="btn-white" href="#program">Lihat Program</a>
+</div>
+</div>
+<div><img class="hero-poster" src="assets/poster1.jpg" alt="Poster TVET ADA Technical Skills Academy"></div>
+</div>
+</section>
+
+<section id="why">
+<div class="container">
+<div class="section-head"><div class="eyebrow">Kenapa pilih TVET?</div><h2>Praktikal, Diiktiraf & Berorientasikan Kerjaya</h2><p>Fokus kepada kemahiran sebenar yang diperlukan industri dan laluan pendidikan serta kerjaya yang lebih jelas.</p></div>
+<div class="benefits">
+<div class="benefit"><div class="icon">💰</div><h3>Yuran Dibiayai</h3><p>Permohonan pembiayaan PTPK tertakluk kepada syarat.</p></div>
+<div class="benefit"><div class="icon">💵</div><h3>Elaun Sehingga RM800</h3><p>Elaun latihan tertakluk kepada terma & kelayakan.</p></div>
+<div class="benefit"><div class="icon">📜</div><h3>Sijil Diiktiraf</h3><p>Pensijilan di bawah laluan kemahiran JPK.</p></div>
+<div class="benefit"><div class="icon">🛠️</div><h3>Hands-on</h3><p>Latihan praktikal dan kemahiran industri.</p></div>
+<div class="benefit"><div class="icon">🎯</div><h3>Laluan Kerjaya</h3><p>Persediaan untuk memasuki dunia pekerjaan.</p></div>
+</div>
+</div>
+</section>
+
+<section id="program" class="programs">
+<div class="container">
+<div class="section-head"><div class="eyebrow">Program ditawarkan</div><h2>Pilih Bidang Yang Sesuai Dengan Minat Anda</h2><p>Pelbagai bidang kemahiran untuk membantu belia membina kerjaya masa depan.</p></div>
+<div class="program-grid">
+<div class="program"><span class="emoji">🚗</span><h3>Automotif | EV</h3><p>Teknologi automotif, penyelenggaraan dan teknologi kenderaan moden.</p></div>
+<div class="program"><span class="emoji">⚡</span><h3>Elektrik</h3><p>Pendawaian, pemasangan, penyelenggaraan dan sistem elektrik.</p></div>
+<div class="program"><span class="emoji">🔥</span><h3>Kimpalan</h3><p>Kemahiran fabrikasi dan teknik kimpalan untuk industri.</p></div>
+<div class="program"><span class="emoji">❄️</span><h3>Penghawa Dingin</h3><p>Pemasangan, servis dan penyelenggaraan sistem penyaman udara.</p></div>
+<div class="program"><span class="emoji">🍳</span><h3>Kulinari</h3><p>Asas kulinari, penyediaan makanan dan kemahiran dapur profesional.</p></div>
+<div class="program"><span class="emoji">🏨</span><h3>F&B / Perhotelan</h3><p>Hospitaliti, hotel, restoran dan peluang industri cruise ship.</p></div>
+<div class="program"><span class="emoji">💻</span><h3>Sistem Komputer</h3><p>Perkakasan, sistem komputer dan asas teknologi maklumat.</p></div>
+<div class="program"><span class="emoji">👶</span><h3>Pendidikan Awal Kanak-kanak</h3><p>Asas pengurusan dan pembelajaran dalam pendidikan awal kanak-kanak.</p></div>
+<div class="program"><span class="emoji">💄</span><h3>Kecantikan | Hairdresser</h3><p>Kemahiran kecantikan, penjagaan diri dan penggayaan rambut.</p></div>
+<div class="program"><span class="emoji">🤖</span><h3>Mekatronik</h3><p>Gabungan mekanikal, elektronik, automasi dan kawalan.</p></div>
+<div class="program"><span class="emoji">🛡️</span><h3>Keselamatan & Pertahanan</h3><p>Program kemahiran berkaitan keselamatan dan bidang sokongan industri.</p></div>
+<div class="program"><span class="emoji">🎨</span><h3>Multimedia Kreatif</h3><p>Reka bentuk digital, kandungan kreatif dan pembangunan multimedia.</p></div>
+<div class="program"><span class="emoji">✈️</span><h3>Penyelenggaraan Operasi Pesawat</h3><p>Pengenalan kepada bidang penyelenggaraan dan operasi teknikal pesawat.</p></div>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="container audience">
+<div class="panel"><h2>👨‍👩‍👧 Untuk Siapa?</h2><ul>
+<li>Lepasan SPM</li><li>Warganegara Malaysia</li><li>Lepasan sekolah / belia</li><li>Pelajar Tahfiz dan Pondok</li>
+</ul></div>
+<div class="panel gold"><h2>🚀 Kenapa ADA?</h2><ul>
+<li>Fokus kemahiran praktikal dan hands-on</li><li>Pelbagai pilihan bidang TVET</li><li>Persediaan ke alam pekerjaan</li><li>Laluan sambung belajar dan pembangunan kerjaya</li>
+</ul></div>
+</div>
+</section>
+
+<section id="galeri" class="programs">
+<div class="container">
+<div class="section-head"><div class="eyebrow">Bahan program</div><h2>Kenali Bidang TVET Kami</h2><p>Antara bahan promosi dan penerangan program ADA Technical Skills Academy.</p></div>
+<div class="gallery">
+<img src="assets/poster2.png" alt="Program TVET">
+<img src="assets/poster3.jpg" alt="TVET lepasan SPM">
+<img src="assets/poster4.jpg" alt="Perbandingan bidang penyelenggaraan pesawat">
+<img src="assets/poster1.jpg" alt="TVET 2026">
+</div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="container">
+<h2>Jom Mulakan Langkah Anda</h2>
+<p>Dapatkan maklumat kemasukan, program, syarat dan sesi taklimat melalui WhatsApp.</p>
+<div class="contact-actions">
+<a class="cta" href="https://wa.me/60173014016?text=Assalamualaikum%2C%20saya%20ingin%20mendapatkan%20maklumat%20program%20TVET%20ADA%20Technical%20Skills%20Academy." target="_blank">📱 WhatsApp: 017-301 4016</a>
+<a class="btn-white" href="mailto:info@adatechnicalskillsacademy.com">✉️ Email Kami</a>
+</div>
+</div>
+</section>
+</main>
+<footer>© 2026 ADA Technical Skills Academy. Semua hak terpelihara.</footer>
+<a class="float-wa" href="https://wa.me/60173014016" target="_blank" aria-label="WhatsApp ADA Technical Skills Academy">💬</a>
+</body>
+</html>
